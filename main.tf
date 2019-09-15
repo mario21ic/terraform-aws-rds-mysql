@@ -58,10 +58,10 @@ resource "aws_db_parameter_group" "rds_pg" {
   name = "${var.env}-pg-${var.name}"
   family = "${var.family}"
 
-  parameter {
-    name = "timezone"
-    value = "America/Lima"
-  }
+  #parameter {
+  #  name = "timezone"
+  #  value = "America/Lima"
+  #}
 
   description = "Parameter group to RDS"
 }
